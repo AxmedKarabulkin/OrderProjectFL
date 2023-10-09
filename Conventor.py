@@ -1,9 +1,9 @@
 class Convertor:
-    def k_to_miles(self, kilometers):   # перевод километры в мили
+    def km_to_miles(self, kilometers):   # перевод километры в мили
         miles = kilometers * 0.621371
         return miles
 
-    def miles_to_k(self, miles):        # перевод милли в километры
+    def miles_to_km(self, miles):        # перевод милли в километры
         kilometers = miles * 1.60934
         return kilometers
 
