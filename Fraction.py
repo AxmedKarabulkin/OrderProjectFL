@@ -15,3 +15,23 @@ class Fraction:
     def set_denominator(self, denominator):     # Сеттер знаменателя
         self.denominator = denominator
 
+    def division(self, fraction):
+        numerator = self.numerator / fraction.denominator   #деление
+        denominator = self.denominator / fraction.numerator
+        return Fraction(numerator, denominator)
+
+    def multiply(self, fraction):
+        numerator = self.numerator * fraction.numerator     #умножение
+        denominator = self.denominator * fraction.denominator
+        return Fraction(numerator, denominator)
+
+    def add(self, fraction):
+        numerator = self.numerator * fraction.denominator + self.denominator * fraction.numerator   #сложение
+        denominator = self.denominator * fraction.numerator + self.denominator * fraction.numerator
+        return Fraction(numerator, denominator)
+
+    def subtraction(self, fraction):
+        numerator = self.numerator * fraction.denominator - self.denominator * fraction.numerator   #вычитание
+        denominator = self.denominator * fraction.numerator - self.denominator * fraction.numerator
+        return Fraction(numerator, denominator)
+
