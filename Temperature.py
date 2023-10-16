@@ -4,6 +4,7 @@ class Temperature:
         f = (c * 9 / 5) + 32
         return f
 
+    @staticmethod
     def f_to_c(self, f):        # перевод Фаренгейт в Цельсии
         c = (f - 32) * 5 / 9
         return c
