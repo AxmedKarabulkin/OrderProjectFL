@@ -1,4 +1,5 @@
 class Fraction:
+    @staticmethod
     def __init__(self, numerator, denominator):     # Конструктор класса Fraction
         self.numerator = numerator
         self.denominator = denominator

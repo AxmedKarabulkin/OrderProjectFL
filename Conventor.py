@@ -1,4 +1,5 @@
 class Convertor:
+    @srarucmethod
     def km_to_miles(self, kilometers):   # перевод километры в мили
         miles = kilometers * 0.621371
         return miles
