@@ -1,4 +1,23 @@
-class Fraction:
-    @staticmethod
-    def __init__(self):
-        self.
+import Temperature
+import Conventor
+import Fraction
+
+
+def main():
+    print(
+        'Привет!!! Эта программа умеет вычислять действия с дробями; конвертировать километры в милли(и наоборот), галлоны в литры(и наоборот); переводить Цельсия в Фарингейт(и наоборот).')  # здесь описываешь запуск программы
+    print('Выберите что вам нужно:')
+    print('1 - Конвертирование температуры')
+    print('2 - Вычисления с дробями')
+    print('3 - Конвертирование метрической системы в английскую или наоборот(галлоны, литры; километры, милли')
+    a = int(input())
+
+    if a == 1:
+        temperature = Temperature()
+    if a == 2:
+        fraction = Fraction()
+    if a == 3:
+        conventor = Conventor()
+
+if __name__ == "__main__":
+    main()
