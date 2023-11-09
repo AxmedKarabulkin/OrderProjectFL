@@ -13,11 +13,78 @@ def main():
     a = int(input())
 
     if a == 1:
-        temperature = Temperature()
+        print("Что вам нужно? Перевод Цельсий в Фаренгейт - 1, или перевод Фаренгейт в Цельсии - 2")
+        b = int(input())
+        if b == 1:
+            print("Введите Цельсии:")
+            C = int(input())
+            print(Temperature.c_to_f(C))
+        if b == 2:
+            print("Введите Фаренгейты")
+            F = int(input())
+            print(Temperature.f_to_c(F))
+
     if a == 2:
-        fraction = Fraction()
+        print("Какое действие с дробями вам нужно? Умножение дробей - 1, Деление дробей - 2, Сложение дробей - 3, Вычитание дробей - 4")
+        d = int(input())
+        if d == 1:
+            print("Введите числитель первой дроби")
+            a1 = int(input())
+            print("Введите знаменатель первой дроби")
+            a2 = int(input())
+            print("Введите числитель второй дроби")
+            a3 = int(input())
+            print("Введите знаменатель второй дроби")
+            a4 = int(input())
+
+
+        if d == 2:
+            print("Введите числитель первой дроби")
+            a5 = int(input())
+            print("Введите знаменатель первой дроби")
+            a6 = int(input())
+            print("Введите числитель второй дроби")
+            a7 = int(input())
+            print("Введите знаменатель второй дроби")
+            a8 = int(input())
+
+        if d == 3:
+            print("Введите числитель первой дроби")
+            a9 = int(input())
+            print("Введите знаменатель первой дроби")
+            a10= int(input())
+            print("Введите числитель второй дроби")
+            a11 = int(input())
+            print("Введите знаменатель второй дроби")
+            a12 = int(input())
+
+        if d == 4:
+            print("Введите числитель первой дроби")
+            a13 = int(input())
+            print("Введите знаменатель первой дроби")
+            a14 = int(input())
+            print("Введите числитель второй дроби")
+            a15 = int(input())
+            print("Введите знаменатель второй дроби")
+            a16 = int(input())
+
+        if a == "1":
+            result = Fraction.add(Fraction)
+        elif a == "2":
+            result = Fraction.subtraction(Fraction)
+        elif a == "3":
+            result = Fraction.multiply(Fraction)
+        elif a == "4":
+            result = Fraction.division(Fraction)
+        else:
+            print("Неверная операция")
+
     if a == 3:
-        conventor = Conventor()
+        m = int(input())
+        print("Выберите опцию 1 - километры в мили, 2 - мили в километры, 3 - галлоны в литры, 4 - литры в галлоны: ")
+        if m == 1:
+
+
 
 if __name__ == "__main__":
     main()
